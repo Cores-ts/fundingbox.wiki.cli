@@ -31,7 +31,7 @@ export default class Setup extends Command {
       GIT_ARGS.push('--branch',
         ref,)
     }
-    GIT_ARGS.push('https://github.com/Cores-ts/fundingbox.central.wiki.git')
+    GIT_ARGS.push('https://github.com/Cores-ts/fundingbox.central.kb.git')
     spawnSync('git', GIT_ARGS, {
       cwd: join(PWD, WORKING_FOLDER),
       shell: true,
