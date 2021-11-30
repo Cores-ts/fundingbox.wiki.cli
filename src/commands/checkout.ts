@@ -26,7 +26,7 @@ export default class Checkout extends Command {
     const PWD = process.env.PWD ?? ''
     const userConfig = await getLocalConfig()
     const content = userConfig.content as {repo: string; checkoutParams?: string[]; staticPath?: string}[]
-    this.log(`Working in ${PWD}`)
+    this.log(`Working in ${PWD}`, content)
 
     content.forEach(entry => {
       const GIT_ARGS = ['clone']
